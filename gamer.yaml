@@ -16,7 +16,7 @@
 
 
   - name: Download latest gameoflife.war file
-    get_url: url=http://54.210.208.82:8081/nexus/content/repositories/gameoflife/{{group_id}}/{{time}}/{{build}}/{{gol_version}} dest=/tmp/ mode=755
+    get_url: url=http://54.210.208.82:8081/nexus/content/repositories/GOL_PROJ1/{{group_id}}/{{time}}/{{build}}/{{gol_version}} dest=/tmp/ mode=755
 
   - name: Stop tomcat service
     service: name=tomcat state=stopped
